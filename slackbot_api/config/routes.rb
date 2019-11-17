@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   #
 
   post "/slack_bots" => "slack_bot#create"
-
+  post "/notification" => "slack_bot#notification"
 
 end
