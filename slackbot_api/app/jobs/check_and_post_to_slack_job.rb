@@ -21,7 +21,7 @@ class CheckAndPostToSlackJob < ApplicationJob
 
   def post_to_slack(channel)
     Slack.configure do |config|
-      config.token = "xoxp-839960292086-826279477507-829887368017-e9903527d6b33025f524702a9b0d8cba"
+      config.token = ΤΟΚΕΝ
     end
 
     channel = "general" unless channel.present?
