@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple rails API to receive webhooks from Slack and enqueue jobs to process the messages sent to the workspace.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If the message is identified as racist/ sexist it replies to the person to warn them about their behaviour and route them to the Educational Chat bot. 
