@@ -31,3 +31,5 @@
 slackbot_api/.idea/* 
 
 tmp/*
+
+config/master.key
