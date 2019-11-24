@@ -21,7 +21,7 @@ class CheckAndPostToSlackJob < ApplicationJob
 
   def post_to_slack(channel)
     Slack.configure do |config|
-      config.token = CONFIG
+      config.token = "xoxp-839960292086-826279477507-829887368017-e9903527d6b33025f524702a9b0d8cba"
     end
 
     channel = "general" unless channel.present?
@@ -34,7 +34,7 @@ class CheckAndPostToSlackJob < ApplicationJob
                                     "attachment_type": "default",
                                     "actions": [
                                         {
-                                            "url": "",
+                                            "url": "https://app.slack.com/client/TQPU88L2J/DQDSM8J5P/app_profile/AQMP9886L",
                                             "text": "Speak with Dialogbot",
                                             "type": "button",
                                         }
