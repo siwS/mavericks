@@ -1,8 +1,8 @@
 require 'csv'
 require 'pry'
 
-file = "output_hostile.csv"
-output_file = "new_output_hostile.csv"
+file = "output_benevolent.csv"
+output_file = "new_output_benevolent.csv"
 
 results = []
 rows = CSV.read(file, liberal_parsing: true)
