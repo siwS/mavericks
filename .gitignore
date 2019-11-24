@@ -28,4 +28,6 @@
 
 .idea/*
 
+slackbot_api/.idea/* 
+
 tmp/*
