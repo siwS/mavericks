@@ -10,6 +10,7 @@ class CheckAndPostToSlackJob < ApplicationJob
     PHRASES.each do |phrase|
       if detect_hateful_speech(phrase, args[0]["text"])
         post_to_slack(args[0]["channel"])
+        SlackMessagesProcessed.create!(channel_id: args[0]["channel"], user_id: args[0]["user"])
         return
       end
     end
@@ -20,10 +21,6 @@ class CheckAndPostToSlackJob < ApplicationJob
   end
 
   def post_to_slack(channel)
-    Slack.configure do |config|
-      config.token = ΤΟΚΕΝ
-    end
-
     channel = "general" unless channel.present?
     client = Slack::Web::Client.new
     client.chat_postMessage(channel: channel, "text": "Using this type of phrasing is not in alignment with our organisation values.",
