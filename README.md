@@ -1,16 +1,20 @@
 # Team - Mavericks
 
+This project was our `Google Dev Fest 2019` Hackathon project.
+
 @fortune @sai @sofia @serena
 
 ## Google Dev Fest hackathon
 
-For Google Dev Fest Hackathon we built a prototype that allows us to identify racist and sexist comments in Slack workspaces by using the Google Auto ML product and the Slack API. 
+For `Google Dev Fest` Hackathon we built a prototype that allows to identify racist and sexist comments in Slack workspaces.\ We used Google Auto ML product to train our model to detect hateful speeach.\ 
+We used the Slack API Webhooks to process and respond to messages sent in Slack channels. 
 
-We also built a Conversational Chat bot using DialogueFlow to educate the person who sent the message about such matters. 
+We built a Conversational Chat bot using `Google DialogueFlow` to educate the person who sent the message about the matter. 
 
-Finally using the Google Speech-to-text, we were able to parse voice and analyse for inappropriate comments, and send the same message. 
+Finally we used the `Google Speech-to-text` to parse voice and analyse it for inappropriate comments.
 
-We used these 2 datasets to train our model that contained pre-classified tweets as racists, or sexists:
+## Dataset
+We used these 2 datasets to train our model that contained pre-classified racist or sexist tweets:
 
 - https://github.com/ZeerakW/hatespeech
 - https://github.com/AkshitaJha/NLP_CSS_201
