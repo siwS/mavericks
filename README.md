@@ -12,7 +12,7 @@ Finally using the Google Speech-to-text, we were able to parse voice and analyse
 
 We used these 2 datasets to train our model that contained pre-classified tweets as racists, or sexists:
 
-https://github.com/ZeerakW/hatespeech 
+https://github.com/ZeerakW/hatespeech\ 
 https://github.com/AkshitaJha/NLP_CSS_201
 
 ## Next steps
