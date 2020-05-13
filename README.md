@@ -17,6 +17,6 @@ We used these 2 datasets to train our model that contained pre-classified tweets
 
 ## Next steps
 
-- Get it out of POC phase and productionize
-- As workplace communications are generally different than twitter communications we would have to expand our dataset and train our models accodingly.
-- Expand to other channels
+-[ ] Get it out of POC phase.
+-[ ] As workplace communications are different than twitter communications we need to expand our dataset and train our models accodingly.
+-[ ] Expand to more workplace channels.
